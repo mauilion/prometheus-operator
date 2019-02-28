@@ -14,7 +14,8 @@ spec:
   baseImage: quay.io/prometheus/prometheus
   nodeSelector:
     beta.kubernetes.io/os: linux
-  replicas: 2
+    node-role.kubernetes.io/analytics-mon: "true"
+  replicas: 1
   resources:
     requests:
       memory: 400Mi

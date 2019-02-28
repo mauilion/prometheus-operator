@@ -38,6 +38,7 @@ spec:
           readOnlyRootFilesystem: true
       nodeSelector:
         beta.kubernetes.io/os: linux
+        node-role.kubernetes.io/analytics-mon: "true"
       securityContext:
         runAsNonRoot: true
         runAsUser: 65534
